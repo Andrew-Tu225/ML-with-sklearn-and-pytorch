@@ -26,9 +26,13 @@ Thumbs.db
 # Data / models
 *.pkl
 *.joblib
-*.h5
+*.h5g
 *.hdf5
 
 # Environment files
 .env
 .env.*
+
+
+"chapter 8/aclImdb_v1.tar.gz"
+"chapter 8/aclImdb/"
