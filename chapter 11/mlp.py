@@ -49,9 +49,11 @@ class NeuralNetMLP:
 
         # dimension: [num_classes, num_hidden]
         d_z_out__d_a_h = self.w_out
+        # dimension: [num_examples, num_hidden]
         d_loss__d_a_h = np.dot(delta_output, d_z_out__d_a_h)
 
         d_a_h__d_z_h = a_h * (1 - a_h)
+        # dimension: [num_examples, num_features]
         d_z_h__d_w_h = X
 
         d_loss__d_w_h = np.dot((d_loss__d_a_h * d_a_h__d_z_h).T, d_z_h__d_w_h)
