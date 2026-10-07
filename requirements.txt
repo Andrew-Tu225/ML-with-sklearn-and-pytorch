@@ -5,3 +5,8 @@ scikit-learn
 mlxtend
 torch
 torchvision
+mlxtend
+pytorch-lightning
+torchmetrics
+tensorboard
+litlogger
